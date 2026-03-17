@@ -32,10 +32,8 @@ img {
 h1,
 h2 {
   font-family: "Young Serif";
-  font-weight: 400;
-  font-size: 16px;
-  font-style: normal;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 h1 {
   color: hsl(24, 5%, 18%);
@@ -44,6 +42,8 @@ h1 {
 }
 h2 {
   color: hsl(14, 45%, 36%);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 ul,
 ol,
@@ -56,17 +56,39 @@ ol,
 p {
   margin-bottom: 20px;
 }
+li {
+  color: hsl(30, 10%, 34%);
+}
 .prep-container {
-  background-color: hsl(326, 100%, 99%);
+  background-color: hsl(323, 75%, 95%, 0.5);
   border-radius: 10px;
   padding: 20px;
 }
 .prep-title {
-  color: hsl(334, 23%, 35%);
+  color: hsl(324, 48%, 31%);
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 15px;
 }
-.prep-list {
+.prep-list,
+.ingredients-list,
+.instructions-list {
   padding: 0 20px;
+}
+.prep-list li::marker {
+  color: hsl(324, 48%, 31%);
+}
+.ingredients-list li {
+  font-weight: normal;
+  padding-left: 20px;
+}
+.ingredients-list,
+.instructions-list li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+hr {
+  border: 0.5px solid hsla(32, 10%, 34%, 0.2);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
