@@ -89,6 +89,16 @@ li {
 }
 hr {
   border: 0.5px solid hsla(32, 10%, 34%, 0.2);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nutrition-table li {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 40%;
+}
+.nutrition-table li strong {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
 }
