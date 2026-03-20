@@ -18,9 +18,10 @@ body {
   border-radius: 20px;
   color: hsl(30, 10%, 34%);
   font-family: "Outfit";
-  margin-top: 70px;
+  margin: 70px auto;
   padding: 40px;
-  width: 700px;
+  max-width: 700px;
+  width: 90%;
 }
 
 img {
@@ -136,4 +137,43 @@ hr {
   margin-left: auto;
   text-align: left;
   width: 50%;
+}
+
+@media (max-width: 375px) {
+  html {
+    background-color: hsl(0, 0%, 100%);
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+  img {
+    border-radius: 0;
+  }
+  h1,
+  h2,
+  p,
+  hr,
+  .nutrition-table {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .prep-container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .prep-list,
+  .ingredients-list,
+  .instructions-list {
+    padding-left: 44px;
+    padding-right: 24px;
+  }
+  hr {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: auto;
+  }
 }
