@@ -25,7 +25,6 @@ body {
 
 img {
   border-radius: 15px;
-  margin-bottom: 30px;
   width: 100%;
 }
 
@@ -37,68 +36,104 @@ h2 {
 }
 h1 {
   color: hsl(24, 5%, 18%);
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 500;
 }
+
 h2 {
   color: hsl(14, 45%, 36%);
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 27px;
+  font-weight: normal;
+  margin-top: 30px;
 }
+
 ul,
 ol,
 li,
 p {
   margin-bottom: 10px;
 }
+
 ul,
 ol,
 p {
   margin-bottom: 20px;
 }
+
+p {
+  font-size: 16px;
+}
+
 li {
   color: hsl(30, 10%, 34%);
+  font-size: 16px;
 }
+
 .prep-container {
   background-color: hsl(323, 75%, 95%, 0.5);
   border-radius: 10px;
   padding: 20px;
 }
+
 .prep-title {
   color: hsl(324, 48%, 31%);
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 15px;
 }
+
 .prep-list,
 .ingredients-list,
 .instructions-list {
+  margin-bottom: 30px;
   padding: 0 20px;
 }
+
+.prep-list li {
+  padding-left: 20px;
+}
+
 .prep-list li::marker {
   color: hsl(324, 48%, 31%);
 }
+
 .ingredients-list li {
   font-weight: normal;
   padding-left: 20px;
 }
-.ingredients-list,
+
+.ingredients-list li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions-list li {
+  font-weight: normal;
+  padding-left: 20px;
+}
+
 .instructions-list li::marker {
   color: hsl(14, 45%, 36%);
   font-weight: bold;
 }
+
 hr {
   border: 0.5px solid hsla(32, 10%, 34%, 0.2);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
+
 .nutrition-table li {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  width: 40%;
+  padding-left: 30px;
+  width: 100%;
 }
+
 .nutrition-table li strong {
   color: hsl(14, 45%, 36%);
   font-weight: bold;
+  margin-left: auto;
+  text-align: left;
+  width: 50%;
 }
