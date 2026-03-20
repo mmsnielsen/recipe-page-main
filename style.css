@@ -153,24 +153,10 @@ hr {
   img {
     border-radius: 0;
   }
-  h1,
-  h2,
-  p,
-  hr,
-  .nutrition-table {
-    padding-left: 24px;
-    padding-right: 24px;
+  .text-container {
+    margin: 0 24px;
   }
-  .prep-container {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-  .prep-list,
-  .ingredients-list,
-  .instructions-list {
-    padding-left: 44px;
-    padding-right: 24px;
-  }
+
   hr {
     margin-left: 24px;
     margin-right: 24px;
