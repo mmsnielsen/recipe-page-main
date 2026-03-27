@@ -117,10 +117,13 @@ li {
   font-weight: bold;
 }
 
-hr {
-  border: 0.5px solid hsla(32, 10%, 34%, 0.2);
-  margin-top: 15px;
-  margin-bottom: 15px;
+section {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 5px 0;
+}
+
+section:last-of-type {
+  border-bottom: none; /* No line after the nutrition section */
 }
 
 .nutrition-table {
@@ -163,11 +166,5 @@ hr {
   }
   .text-container {
     margin: 0 24px;
-  }
-
-  hr {
-    margin-left: 24px;
-    margin-right: 24px;
-    width: auto;
   }
 }
