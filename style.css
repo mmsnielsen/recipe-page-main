@@ -123,20 +123,28 @@ hr {
   margin-bottom: 15px;
 }
 
-.nutrition-table li {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding-left: 30px;
+.nutrition-table {
+  border-collapse: collapse;
   width: 100%;
 }
 
-.nutrition-table li strong {
+.nutrition-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 30px;
+  width: 50%;
+}
+
+.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrition-table td:last-child {
+  text-align: left;
+}
+
+.nutrition-table td strong {
   color: hsl(14, 45%, 36%);
   font-weight: bold;
-  margin-left: auto;
-  text-align: left;
-  width: 50%;
 }
 
 @media (max-width: 375px) {
